@@ -1,0 +1,120 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif, "Arial Narrow",
+    Arial, sans-serif;
+}
+
+.header {
+  height: 56px;
+  width: 100%;
+  background: #212529;
+  position: fixed;
+}
+
+.header__logo {
+  color: #fed136;
+  font-size: 20px;
+}
+
+.topbar__container {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__menu {
+  width: 78px;
+  height: 38px;
+  color: white;
+  background: #fed136;
+  border: none;
+  border-radius: 4px;
+}
+
+@media (min-width: 992px) {
+  .nav__menu {
+    display: none;
+  }
+}
+
+.nav {
+  display: none;
+}
+
+@media (min-width: 992px) {
+  .nav {
+    display: block;
+    width: 50%;
+  }
+
+  .nav__list {
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    text-transform: uppercase;
+    font-family: "Montserrat";
+  }
+}
+
+.dropdown {
+  height: 0;
+  background-color: #212529;
+  font-family: "Montserrat";
+  transition: all 0.4s;
+}
+
+.dropdown--show {
+  transition: all 0.4s;
+  height: 215px;
+}
+
+@media (min-width: 992px) {
+  .dropdown--show {
+    display: none;
+  }
+}
+
+.dropdown__container {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.dropdown__item {
+  color: white;
+  text-transform: uppercase;
+  padding: 10px 0;
+}
+
+/* UTILITY CLASSES */
+.container {
+  height: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin: 0 auto;
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
